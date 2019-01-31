@@ -37,10 +37,12 @@ CSS Grid Layout includes a grid-gap property to space items out. This property i
 
 ### Random new stuff to check
 * [shape-outside](https://developer.mozilla.org/en-US/docs/Web/CSS/shape-outside) nice css feature.
-
+* [grid-area]() need to investigate looks amazing.  The value of grid-template-areas shows visually what our layout looks like.
 ### Quotes from resoures
 > Ten years ago now, when the real job of a front-end developer was that
 oof a browser-bugs expert. <cite>Rachel Andrew</cite>
+
+> The areas must be rectangular in nature—we can’t yet create an L-shaped area. <cite>Rachel Andrew</cite>
 
 
 ### Support
