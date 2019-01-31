@@ -4,7 +4,7 @@
 
 Early CSS layouts were a mix of floats and positioned elements (fixed, absolute, relative).
 Before Flex and Grid it was very difficult to to create footer what is always on the
-bottom off page. _(Google: Sticky footer problem)_ and much more ;-)
+bottom of page. _(Google: Sticky footer problem)_ and much more ;-)
 
 Is worth to say that GRID is free from all tricks what we had to use before
 like _clearfix_ for layouts based on _floats_. Is anybody remember _clearfix_ ? ;-)
@@ -60,4 +60,4 @@ CSS Grid seems to be more powerfull then _flex_. I would like to investigate how
 
 #### PS
 
-This is my person notes and might not make sense :-)
+This is my personal notes and might not make sense :-)
