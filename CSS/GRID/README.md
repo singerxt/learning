@@ -12,6 +12,29 @@ like _clearfix_ for layouts based on _floats_. Is anybody remember _clearfix_ ? 
 Grid is allowing you to position elements in easy way without using positioned
 elements etc.
 
+### Some options
+
+If you want to start using grid. You have to define `display: grid` for container.
+```html
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+</style>
+<div class="grid-container">
+  <div><div> <!-- Column -->
+  <div><div>
+  <div><div>
+  <div><div>
+</div>
+```
+
+To define how much columns you want you have to use _grid-template-columns: 1fr 1fr 1fr;_.
+In the example we will have 3 columns all set to 1fr each, the available space is divided into three and distributed equally.
+
+CSS Grid Layout includes a grid-gap property to space items out. This property is shorthand for grid-col- umn-gap and grid-row-gap, which can also be specified individually.
+
 ### Random new stuff to check
 * [shape-outside](https://developer.mozilla.org/en-US/docs/Web/CSS/shape-outside) nice css feature.
 
