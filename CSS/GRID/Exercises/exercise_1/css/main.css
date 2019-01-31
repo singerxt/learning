@@ -1,0 +1,19 @@
+
+.grid-container-1 {
+  display: grid;
+  /* 3 equal rows */
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-container-1 .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px hsl(100, 50%, 50%) solid;
+  background: 1px hsl(100, 80%, 80%);
+  min-height: 200px;
+  text-align: center;
+}
+
+
+
