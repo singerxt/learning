@@ -44,6 +44,7 @@ oof a browser-bugs expert. <cite>Rachel Andrew</cite>
 
 > The areas must be rectangular in nature—we can’t yet create an L-shaped area. <cite>Rachel Andrew</cite>
 
+> If you know how to align items in flexbox, you’ll find that it works the same way for Grid.
 
 ### Support
 Grid is supported by all modern browsers expect IE11
