@@ -1,8 +1,8 @@
 
+
 .grid-container-1 {
   display: grid;
-  /* 3 equal rows */
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .grid-container-1 .box {
@@ -15,5 +15,11 @@
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .grid-container-1 {
+    /* 3 equal rows */
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 
