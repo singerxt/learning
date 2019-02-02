@@ -20,7 +20,7 @@ body {
 
 .header-top {
   display: grid;
-  grid-template-columns: 42px 50% 1fr;
+  grid-template-columns: 42px 50% 1fr 250px;
   height: 80px;
   align-items: center;
 }
@@ -30,6 +30,7 @@ body {
   border: 1px solid var(--gray);
   border-radius: 25px;
   height: 42px;
+  outline: none;
 }
 
 .header-top__nav {
@@ -40,6 +41,9 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  text-align: center;
 }
 
 .header-top__nav li {
@@ -52,3 +56,12 @@ body {
   text-transform: capitalize;
 }
 
+.button {
+  width: 250px;
+  text-decoration: none;
+  color: var(--gray-dark);
+  text-transform: capitalize;
+  background: none;
+  border: 1px solid var(--gray-dark);
+  border-radius: 5px;
+}

@@ -53,6 +53,22 @@ Grid is supported by all modern browsers expect IE11
 CSS Grid seems to be more powerfull then _flex_. I would like to investigate how it's works.
 
 
+#### Use auto-fit, auto-fill
+if you want use grid for example on list and you don't know how many items you might have
+use:
+```css
+.header-top__nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.header-top__nav li {
+  display: inline-block;
+}
+```
 #### repeat
 
 ```css
