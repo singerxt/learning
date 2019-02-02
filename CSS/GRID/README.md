@@ -52,7 +52,20 @@ Grid is supported by all modern browsers expect IE11
 ### Notes
 CSS Grid seems to be more powerfull then _flex_. I would like to investigate how it's works.
 
-#### Shorthands
+
+#### repeat
+```css
+.grid-container {
+  grid: repeat(4, 1fr)
+}
+
+// is same like
+
+.grid-container {
+  grid: 1fr 1fr 1fr 1fr
+}
+```
+#### shorthands
 ```css
 .grid-container-3 .b {
   grid-column-start: 2;
