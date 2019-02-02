@@ -54,6 +54,7 @@ CSS Grid seems to be more powerfull then _flex_. I would like to investigate how
 
 
 #### repeat
+
 ```css
 .grid-container {
   grid: repeat(4, 1fr)
@@ -66,6 +67,7 @@ CSS Grid seems to be more powerfull then _flex_. I would like to investigate how
 }
 ```
 #### shorthands
+
 ```css
 .grid-container-3 .b {
   grid-column-start: 2;
