@@ -1,0 +1,54 @@
+
+:root {
+  --gray: #F1F1F1;
+  --gray-dark: #999999;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.camera-icon {
+  width: 42px;
+  height: 38px;
+  background-image: url("../assets/camera.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.header-top {
+  display: grid;
+  grid-template-columns: 42px 50% 1fr;
+  height: 80px;
+  align-items: center;
+}
+
+.header-top__search {
+  background: var(--gray);
+  border: 1px solid var(--gray);
+  border-radius: 25px;
+  height: 42px;
+}
+
+.header-top__nav {
+
+}
+
+.header-top__nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-top__nav li {
+  display: inline-block;
+}
+
+.header-top a {
+  text-decoration: none;
+  color: var(--gray-dark);
+  text-transform: capitalize;
+}
+
