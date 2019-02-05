@@ -6,30 +6,37 @@
 
 body {
   display: grid;
-  grid-template-columns: 1fr;
+  min-height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'hero hero hero'
+    'offers offers offers'
+    'popular-deals popular-deals popular-deals'
+    'mailing-list mailing-list mailing-list'
+    'footer footer footer';
 }
 
 .hero {
-  min-height: 100px;
+  grid-area: hero;
   background: #F1F1F1;
 }
 
 .offers {
-  min-height: 100px;
+  grid-area: offers;
   background: aqua;
 }
 
 .popular-deals {
-  min-height: 100px;
+  grid-area: popular-deals;
   background: aquamarine;
 }
 
 .mailing-list {
-  min-height: 100px;
-  background: #00ff00;
+  grid-area: mailing-list;
+  background: aliceblue;
 }
 
 .footer {
-  min-height: 100px;
+  grid-area: footer;
   background: cornflowerblue;
 }
