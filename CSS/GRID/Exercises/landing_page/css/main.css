@@ -9,59 +9,27 @@ body {
   grid-template-columns: 1fr;
 }
 
-.camera-icon {
-  width: 42px;
-  height: 38px;
-  background-image: url("../assets/camera.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+.hero {
+  min-height: 100px;
+  background: #F1F1F1;
 }
 
-.header-top {
-  display: grid;
-  grid-template-columns: 42px 50% 1fr 250px;
-  height: 80px;
-  align-items: center;
+.offers {
+  min-height: 100px;
+  background: aqua;
 }
 
-.header-top__search {
-  background: var(--gray);
-  border: 1px solid var(--gray);
-  border-radius: 25px;
-  height: 42px;
-  outline: none;
+.popular-deals {
+  min-height: 100px;
+  background: aquamarine;
 }
 
-.header-top__nav {
-
+.mailing-list {
+  min-height: 100px;
+  background: #00ff00;
 }
 
-.header-top__nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  text-align: center;
-}
-
-.header-top__nav li {
-  display: inline-block;
-}
-
-.header-top a {
-  text-decoration: none;
-  color: var(--gray-dark);
-  text-transform: capitalize;
-}
-
-.button {
-  width: 250px;
-  text-decoration: none;
-  color: var(--gray-dark);
-  text-transform: capitalize;
-  background: none;
-  border: 1px solid var(--gray-dark);
-  border-radius: 5px;
+.footer {
+  min-height: 100px;
+  background: cornflowerblue;
 }

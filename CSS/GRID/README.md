@@ -104,7 +104,8 @@ use:
 * [The new CSS Layout by Rachel Andrew](https://abookapart.com/products/the-new-css-layout)
 * [CSS grid garden](http://cssgridgarden.com/)
 * [Grid by example](https://gridbyexample.com/)
-
+* [Why CSS grid-area is the best property for laying out content](https://www.youtube.com/watch?v=duH4DLq5yoo)
+* [Build a Mosaic Portfolio Layout with CSS Grid](https://www.youtube.com/watch?v=plRcoRqLriw)
 #### PS
 
 This is my personal notes and might not make sense :-)

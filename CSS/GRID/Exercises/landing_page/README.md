@@ -4,4 +4,4 @@
 * Html should be semantic
 
 # Resources
-* [mockup](https://freebiesui.com/xd-freebies/xd-web-templates/unsplash-free-web-theme/)
+* [mockup](http://uirepublic.net/download-free-clothing-fashion-website-design-xd)
