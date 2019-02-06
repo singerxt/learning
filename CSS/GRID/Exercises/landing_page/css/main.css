@@ -64,12 +64,15 @@ body {
 .offers {
   display: grid;
   grid-area: offers;
-  grid-template-columns: repeat(4, 25vw);
-  grid-template-rows: repeat(3, 25vw);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.offers img {
+  width: 100%;
 }
 
 .offers__box {
-  border: 1px solid black;
+  position: relative;
 }
 
 .offers__box--long {
