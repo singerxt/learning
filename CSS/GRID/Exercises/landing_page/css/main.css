@@ -62,10 +62,10 @@ body {
 }
 
 .offers {
-  height: 500px;
   display: grid;
   grid-area: offers;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 25vw);
+  grid-template-rows: repeat(3, 25vw);
 }
 
 .offers__box {
