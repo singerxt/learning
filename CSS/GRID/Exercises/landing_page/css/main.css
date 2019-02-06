@@ -30,6 +30,7 @@ body {
   grid-template-rows: 60px 1fr;
   background: url("../assets/hero-image.png") no-repeat;
   background-size: cover;
+  min-height: 792px;
 }
 
 .hero:after {
@@ -39,8 +40,8 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: violet;
-  opacity: 0.5;
+  background-color: black;
+  opacity: 0.7;
   z-index: 1;
 }
 
@@ -52,6 +53,11 @@ body {
 
 .navigation {
   z-index: 2;
+}
+
+.promotion {
+  z-index: 2;
+  background: url("../assets/promotion.svg") center no-repeat;
 }
 
 .offers {
