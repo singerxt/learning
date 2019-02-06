@@ -8,6 +8,7 @@
   display: grid;
   width: 100%;
   max-width: 1450px;
+  margin: 0 auto;
 }
 
 body {
@@ -61,8 +62,22 @@ body {
 }
 
 .offers {
+  height: 500px;
+  display: grid;
   grid-area: offers;
-  background: aqua;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.offers__box {
+  border: 1px solid black;
+}
+
+.offers__box--long {
+  grid-column: span 3;
+}
+
+.offers__box--short {
+  grid-column: span 1;
 }
 
 .popular-deals {
