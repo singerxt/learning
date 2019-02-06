@@ -64,7 +64,7 @@ body {
 .offers {
   display: grid;
   grid-area: offers;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(8, 1fr);
 }
 
 .offers img {
@@ -73,14 +73,15 @@ body {
 
 .offers__box {
   position: relative;
+  grid-column: span 2;
 }
 
 .offers__box--long {
-  grid-column: span 3;
+  grid-column: span 5;
 }
 
 .offers__box--short {
-  grid-column: span 1;
+  grid-column: span 3;
 }
 
 .popular-deals {
