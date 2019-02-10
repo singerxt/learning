@@ -65,15 +65,19 @@ body {
   display: grid;
   grid-area: offers;
   grid-template-columns: repeat(100, 1fr);
+  grid-template-rows: 1fr 2fr 2fr;
 }
 
 .offers img {
+  position: absolute;
   width: 100%;
+  height: 100%;
 }
 
 .offers__box {
   position: relative;
   grid-column: span 25;
+  padding-bottom: 50%;
 }
 
 .offers__box--long {
