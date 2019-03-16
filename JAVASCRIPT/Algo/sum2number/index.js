@@ -1,29 +1,24 @@
 
-// O(n) | O(n) space
+// O(n) | O(1) space
 function twoNumberSum(array, targetSum) {
-  const store = new Set();
-  for (let i = 0; i < array.length; i++) {
-    const current = array[i];
-    const possibleResult = targetSum - current;
+  const sort = (a, b) => a - b;
+  const sorted = array.sort(sort);
+  let left = 0;
+  let right = sorted.length - 1;
 
-    if (store.has(possibleResult)) {
-      return [possibleResult, current].sort((a, b) => a - b);
+  while (left < right)  {
+    const sum = array[left] + array[right];
+
+    if (sum === targetSum) {
+      return [array[left], array[right]];
+    } else if (sum < targetSum) {
+      left++;
+    } else if (sum > targetSum) {
+      right--;
     }
-
-    store.add(current);
   }
-  return [];
+
+  return  [];
 }
 
-// O(n) | O(1) space
-// function twoNumberSum(array, targetSum) {
-//   const sort = (a, b) => a - b;
-//   const sorted = array.sort(sort);
-//   let left = 0;
-//   let right = sorted.length;
-// }
-
-console.log(twoNumberSum([1,2,3,7,-4,-1], 2));
-
 module.exports = twoNumberSum;
-
