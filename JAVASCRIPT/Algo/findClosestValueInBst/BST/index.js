@@ -17,6 +17,19 @@ class Node {
   }
 
   /**
+   * Check if branch is ready to get value.
+   * @param {'left' | 'right '} branch to check
+   * @return {boolean} is empty ?
+   */
+  isEmpty(branch) {
+    if (branch !== 'left' || branch !== 'right') {
+      throw new Error('NODE :: .isEmpty invalid branch must be \'left\' or \'right\'.');
+    }
+
+    return !isInteger(this[branch]);
+  }
+
+  /**
    * Node is leaf when do not have any children's.
    * This is helper function what help to figure out if current
    * Node is last Node in three or check if Node can have children's
@@ -60,7 +73,21 @@ class Node {
 }
 
 class BST {
+  constructor(node) {
+    this.root = node;
+  }
 
+  add() {
+
+  }
+
+  static search() {
+
+  }
+
+  static exists() {
+
+  }
 }
 
 module.exports = BST;
