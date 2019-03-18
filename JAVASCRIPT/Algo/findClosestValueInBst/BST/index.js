@@ -26,6 +26,15 @@ class Node {
     return this.left === null && this.right === null;
   }
 
+  /**
+   * Helper method for adding values to node.
+   * Creating three structure
+   *         1
+   *        /\
+   *       2  3
+   * @param {Number} value
+   * @return {void}
+   */
   add(value) {
     if (!isInteger(value)) {
       throw new Error('NODE :: .add require value argument (int)');
