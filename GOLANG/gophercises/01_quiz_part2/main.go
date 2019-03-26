@@ -51,18 +51,23 @@ func main() {
   var problems = getQA()
   scanner := bufio.NewScanner(os.Stdin)
   timer := time.NewTimer(2 * time.Second)
+  inputChannel := make(chan string)
 
-  for _, problem := range problems {
+  go func() {
+    scanner.Scan()
+    inputChannel <- scanner.Text()
+  }()
+
+
+  loop: for _, problem := range problems {
+    fmt.Println("what is result of", problem.Question, "?")
+
     select {
       case <-timer.C:
         fmt.Println("timeend")
-        return
-      default:
-        fmt.Println("what is result of", problem.Question, "?")
-        scanner.Scan()
-        answer := scanner.Text()
+        break loop
+      case answer := <- inputChannel:
         fmt.Println("your answer is", answer)
-
         if answer == problem.Answer {
           score++
         }
