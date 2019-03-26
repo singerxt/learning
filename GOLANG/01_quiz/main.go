@@ -46,17 +46,20 @@ func getQA() []QA {
 }
 
 func main() {
+  score := 0
   var problems = getQA()
-  reader := bufio.NewReader(os.Stdin)
+  scanner := bufio.NewScanner(os.Stdin)
 
   for _, problem := range problems {
     fmt.Println("what is result of", problem.Question, "?")
-    fmt.Println("result",  problem.Answer)
-    answer, _ := reader.ReadString('\n')
+    scanner.Scan()
+    answer := scanner.Text()
     fmt.Println("your answer is", answer)
 
     if answer == problem.Answer {
-      fmt.Println("correect")
+      score++
     }
   }
+
+  fmt.Println("Your score is", score, "/", len(problems))
 }
