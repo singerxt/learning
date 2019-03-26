@@ -2,6 +2,7 @@
 const { isInteger } = Number;
 
 class Node {
+
   /**
    * @constructor
    * @param {Number} initialValue for BST Node.
